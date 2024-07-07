@@ -18,7 +18,7 @@ class Renderer:
         pygame.init()
         pygame.font.init()
         self.font = pygame.font.SysFont("Arial", 15)
-        pygame.display.set_caption("Graphix Plane3D")
+        pygame.display.set_caption("Plane3D")
         self.main_screen.fill((255, 255, 255))
 
     def run(self):
