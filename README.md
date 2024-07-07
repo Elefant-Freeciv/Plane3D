@@ -1,4 +1,4 @@
-Graphix Plane3D is a simple 3d renderer with texturing, 
+Plane3D is a simple 3d renderer with texturing, 
 rotation, and transformation. Large textures slow it down.
 To add objects, open Objects.py, copy class Cube, and edit 
 the vertices (X,Y,Z,R,G,B,x,y,z,tex,o,xr,yr,zr), where X, Y, Z 
