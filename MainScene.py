@@ -82,11 +82,12 @@ class MainScene(Scene):
         world_space_tris.sort(
             key=lambda k: sum([vec.z for vec in k[0]]) / 3, reverse=True)
 
+        orthxview = orth_proj * view
         transformed_vertices_tris = []
         for tri, col, tex in world_space_tris:
             new_tri = []
             for v in tri:
-                vec = orth_proj * view * v
+                vec = orthxview * v
                 vec.w = -vec.z
                 vec = Vec3(vec.x / vec.w, vec.y / vec.w, vec.z / vec.w)
                 new_tri.append(vec)
